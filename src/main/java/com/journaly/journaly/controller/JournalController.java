@@ -17,14 +17,14 @@ public class JournalController {
     @Autowired
     private JournalEntryRepository journalEntryRepository;
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
     public JournalEntry saveJournalEntry(@Valid @RequestBody JournalEntry journalEntry) {
         return journalEntryRepository.save(journalEntry);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin(origins = "*")
     @GetMapping("/entries")
     @ResponseStatus(HttpStatus.OK)
     public List<JournalEntry> getJournalEntries() {
