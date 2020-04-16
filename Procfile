@@ -1,0 +1,1 @@
+web: java -jar build/libs/journaly-0.0.1-SNAPSHOT.jar
