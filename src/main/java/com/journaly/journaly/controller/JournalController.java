@@ -21,8 +21,6 @@ public class JournalController {
     @PostMapping("/")
     @ResponseStatus(HttpStatus.CREATED)
     public JournalEntry saveJournalEntry(@Valid @RequestBody JournalEntry journalEntry) {
-        System.out.println(journalEntry.getContent());
-        System.out.println(journalEntry.getDate());
         return journalEntryRepository.save(journalEntry);
     }
 
