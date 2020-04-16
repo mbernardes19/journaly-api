@@ -1,1 +1,1 @@
-java -Dserver.port=$PORT $JAVA_OPTS -jar target/*.jar
+java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/journaly-0.0.1-SNAPSHOT.jar
